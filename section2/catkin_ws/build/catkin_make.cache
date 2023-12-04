@@ -1,0 +1,2 @@
+learning_topic
+-DCATKIN_DEVEL_PREFIX=/home/brave/Desktop/ros-study/test1/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/brave/Desktop/ros-study/test1/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=learning_topic -G Unix Makefiles
