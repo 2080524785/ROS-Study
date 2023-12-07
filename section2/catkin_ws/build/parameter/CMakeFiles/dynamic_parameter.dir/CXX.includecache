@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/brave/Desktop/ros-study/test1/catkin_ws/devel/include/parameter/TutorialsConfig.h
+/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/include/parameter/TutorialsConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,9 +24,9 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/brave/Desktop/ros-study/test1/catkin_ws/src/parameter/src/dynamic_parameter.cpp
+/home/brave/soft/code/ROS-Study/section2/catkin_ws/src/parameter/src/dynamic_parameter.cpp
 ros/ros.h
-/home/brave/Desktop/ros-study/test1/catkin_ws/src/parameter/src/ros/ros.h
+/home/brave/soft/code/ROS-Study/section2/catkin_ws/src/parameter/src/ros/ros.h
 dynamic_reconfigure/server.h
 -
 parameter/TutorialsConfig.h

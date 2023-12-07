@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/brave/Desktop/ros-study/test1/catkin_ws/devel/include/learning_topic/Student.h
+/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/include/learning_topic/Student.h
 string
 -
 vector
@@ -22,11 +22,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/brave/Desktop/ros-study/test1/catkin_ws/src/learning_topic/src/student_publisher.cpp
+/home/brave/soft/code/ROS-Study/section2/catkin_ws/src/learning_topic/src/student_publisher.cpp
 ros/ros.h
 -
 learning_topic/Student.h
-/home/brave/Desktop/ros-study/test1/catkin_ws/src/learning_topic/src/learning_topic/Student.h
+/home/brave/soft/code/ROS-Study/section2/catkin_ws/src/learning_topic/src/learning_topic/Student.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

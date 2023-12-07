@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/brave/Desktop/ros-study/test1/catkin_ws/devel/lib/learning_topic/turtle_subscriber"
-  "/home/brave/Desktop/ros-study/test1/catkin_ws/devel/lib/learning_topic/turtle_subscriber.pdb"
   "CMakeFiles/turtle_subscriber.dir/src/turtle_subscriber.cpp.o"
+  "/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/lib/learning_topic/turtle_subscriber.pdb"
+  "/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/lib/learning_topic/turtle_subscriber"
 )
 
 # Per-language clean rules from dependency scanning.

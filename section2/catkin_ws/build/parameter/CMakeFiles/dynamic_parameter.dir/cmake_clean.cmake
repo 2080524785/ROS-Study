@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/brave/Desktop/ros-study/test1/catkin_ws/devel/lib/parameter/dynamic_parameter"
-  "/home/brave/Desktop/ros-study/test1/catkin_ws/devel/lib/parameter/dynamic_parameter.pdb"
   "CMakeFiles/dynamic_parameter.dir/src/dynamic_parameter.cpp.o"
+  "/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/lib/parameter/dynamic_parameter.pdb"
+  "/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/lib/parameter/dynamic_parameter"
 )
 
 # Per-language clean rules from dependency scanning.

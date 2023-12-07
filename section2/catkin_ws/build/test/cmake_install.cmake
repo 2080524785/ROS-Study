@@ -1,8 +1,8 @@
-# Install script for directory: /home/brave/Desktop/ros-study/test1/catkin_ws/src/test
+# Install script for directory: /home/brave/soft/code/ROS-Study/section2/catkin_ws/src/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/brave/Desktop/ros-study/test1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/brave/soft/code/ROS-Study/section2/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,23 +32,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brave/soft/code/ROS-Study/section2/catkin_ws/build/test/catkin_generated/installspace/test.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brave/Desktop/ros-study/test1/catkin_ws/build/test/catkin_generated/installspace/test.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test/cmake" TYPE FILE FILES
-    "/home/brave/Desktop/ros-study/test1/catkin_ws/build/test/catkin_generated/installspace/testConfig.cmake"
-    "/home/brave/Desktop/ros-study/test1/catkin_ws/build/test/catkin_generated/installspace/testConfig-version.cmake"
+    "/home/brave/soft/code/ROS-Study/section2/catkin_ws/build/test/catkin_generated/installspace/testConfig.cmake"
+    "/home/brave/soft/code/ROS-Study/section2/catkin_ws/build/test/catkin_generated/installspace/testConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test" TYPE FILE FILES "/home/brave/Desktop/ros-study/test1/catkin_ws/src/test/package.xml")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test" TYPE FILE FILES "/home/brave/soft/code/ROS-Study/section2/catkin_ws/src/test/package.xml")
 endif()
 

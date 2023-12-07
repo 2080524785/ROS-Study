@@ -1,4 +1,4 @@
-prefix=/home/brave/Desktop/ros-study/test1/catkin_ws/devel
+prefix=/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel
 
 Name: learning
 Description: Description of learning

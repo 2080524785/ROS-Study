@@ -138,6 +138,7 @@ include_directories(
 # # The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/learning_service_node.cpp)
 add_executable(turtle_spawn src/turtle_spawn.cpp)
+add_executable(turtle_vel_cmd src/turtle_vel_cmd.cpp)
 
 # # Rename C++ executable without prefix
 # # The above recommended prefix causes long target names, the following renames the
@@ -154,6 +155,7 @@ add_executable(turtle_spawn src/turtle_spawn.cpp)
 # ${catkin_LIBRARIES}
 # )
 target_link_libraries(turtle_spawn ${catkin_LIBRARIES})
+target_link_libraries(turtle_vel_cmd ${catkin_LIBRARIES})
 
 # ############
 # # Install ##

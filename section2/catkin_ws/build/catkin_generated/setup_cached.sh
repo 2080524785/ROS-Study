@@ -7,5 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/brave/Desktop/ros-study/test1/catkin_ws/build'
-export PYTHONPATH="/home/brave/Desktop/ros-study/test1/catkin_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
+export PWD='/home/brave/soft/code/ROS-Study/section2/catkin_ws/build'
+export ROS_PACKAGE_PATH='/home/brave/Desktop/ros-study/test1/catkin_ws/src:/home/brave/soft/code/ROS-Study/section2/catkin_ws/src:/opt/ros/noetic/share'

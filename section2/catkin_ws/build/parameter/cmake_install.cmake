@@ -1,8 +1,8 @@
-# Install script for directory: /home/brave/Desktop/ros-study/test1/catkin_ws/src/parameter
+# Install script for directory: /home/brave/soft/code/ROS-Study/section2/catkin_ws/src/parameter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/brave/Desktop/ros-study/test1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/brave/soft/code/ROS-Study/section2/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,39 +32,34 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/parameter" TYPE FILE FILES "/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/include/parameter/TutorialsConfig.h")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/parameter" TYPE FILE FILES "/home/brave/Desktop/ros-study/test1/catkin_ws/devel/include/parameter/TutorialsConfig.h")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/parameter" TYPE FILE FILES "/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/lib/python3/dist-packages/parameter/__init__.py")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/parameter" TYPE FILE FILES "/home/brave/Desktop/ros-study/test1/catkin_ws/devel/lib/python3/dist-packages/parameter/__init__.py")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/lib/python3/dist-packages/parameter/cfg")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/brave/Desktop/ros-study/test1/catkin_ws/devel/lib/python3/dist-packages/parameter/cfg")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/parameter" TYPE DIRECTORY FILES "/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/lib/python3/dist-packages/parameter/cfg")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/parameter" TYPE DIRECTORY FILES "/home/brave/Desktop/ros-study/test1/catkin_ws/devel/lib/python3/dist-packages/parameter/cfg")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brave/soft/code/ROS-Study/section2/catkin_ws/build/parameter/catkin_generated/installspace/parameter.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brave/Desktop/ros-study/test1/catkin_ws/build/parameter/catkin_generated/installspace/parameter.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/parameter/cmake" TYPE FILE FILES
-    "/home/brave/Desktop/ros-study/test1/catkin_ws/build/parameter/catkin_generated/installspace/parameterConfig.cmake"
-    "/home/brave/Desktop/ros-study/test1/catkin_ws/build/parameter/catkin_generated/installspace/parameterConfig-version.cmake"
+    "/home/brave/soft/code/ROS-Study/section2/catkin_ws/build/parameter/catkin_generated/installspace/parameterConfig.cmake"
+    "/home/brave/soft/code/ROS-Study/section2/catkin_ws/build/parameter/catkin_generated/installspace/parameterConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/parameter" TYPE FILE FILES "/home/brave/Desktop/ros-study/test1/catkin_ws/src/parameter/package.xml")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/parameter" TYPE FILE FILES "/home/brave/soft/code/ROS-Study/section2/catkin_ws/src/parameter/package.xml")
 endif()
 
