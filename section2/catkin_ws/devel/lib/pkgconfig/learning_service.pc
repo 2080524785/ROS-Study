@@ -1,8 +1,0 @@
-prefix=/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel
-
-Name: learning_service
-Description: Description of learning_service
-Version: 0.0.0
-Cflags: -I/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs roscpp rospy std_msgs turtlesim message_runtime

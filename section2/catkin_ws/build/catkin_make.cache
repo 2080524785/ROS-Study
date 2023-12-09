@@ -1,2 +1,0 @@
-learning_service
--DCATKIN_DEVEL_PREFIX=/home/brave/soft/code/ROS-Study/section2/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/brave/soft/code/ROS-Study/section2/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=learning_service -G Unix Makefiles

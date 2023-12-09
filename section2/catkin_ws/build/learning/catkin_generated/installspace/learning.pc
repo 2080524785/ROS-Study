@@ -1,8 +1,0 @@
-prefix=/home/brave/soft/code/ROS-Study/section2/catkin_ws/install
-
-Name: learning
-Description: Description of learning
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
