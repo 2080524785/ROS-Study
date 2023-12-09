@@ -13,6 +13,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   turtlesim
+  rosmsg
+  message_generation
 )
 
 # # System dependencies are found with CMake's conventions
@@ -60,6 +62,10 @@ find_package(catkin REQUIRED COMPONENTS
 # Service1.srv
 # Service2.srv
 # )
+add_service_files(
+  FILES 
+  Add.srv 
+)
 
 # # Generate actions in the 'action' folder
 # add_action_files(
@@ -73,6 +79,11 @@ find_package(catkin REQUIRED COMPONENTS
 # DEPENDENCIES
 # geometry_msgs#   std_msgs
 # )
+generate_messages(
+  DEPENDENCIES 
+  std_msgs 
+  geometry_msgs
+)
 
 # ###############################################
 # # Declare ROS dynamic reconfigure parameters ##
@@ -107,7 +118,7 @@ catkin_package(
 
   # INCLUDE_DIRS include
   # LIBRARIES learning_service
-  # CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs turtlesim
+  CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs turtlesim message_runtime
   # DEPENDS system_lib
 )
 
@@ -139,6 +150,8 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/learning_service_node.cpp)
 add_executable(turtle_spawn src/turtle_spawn.cpp)
 add_executable(turtle_vel_cmd src/turtle_vel_cmd.cpp)
+add_executable(add_client src/add_client.cpp)
+add_executable(add_server src/add_server.cpp)
 
 # # Rename C++ executable without prefix
 # # The above recommended prefix causes long target names, the following renames the
@@ -149,6 +162,8 @@ add_executable(turtle_vel_cmd src/turtle_vel_cmd.cpp)
 # # Add cmake target dependencies of the executable
 # # same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(add_server ${PROJECT_NAME}_generate_messages_cpp)
+add_dependencies(add_client ${PROJECT_NAME}_generate_messages_cpp)
 
 # # Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
@@ -156,7 +171,8 @@ add_executable(turtle_vel_cmd src/turtle_vel_cmd.cpp)
 # )
 target_link_libraries(turtle_spawn ${catkin_LIBRARIES})
 target_link_libraries(turtle_vel_cmd ${catkin_LIBRARIES})
-
+target_link_libraries(add_client ${catkin_LIBRARIES})
+target_link_libraries(add_server ${catkin_LIBRARIES})
 # ############
 # # Install ##
 # ############
