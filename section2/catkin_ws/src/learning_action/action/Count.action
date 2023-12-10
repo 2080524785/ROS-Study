@@ -1,0 +1,5 @@
+uint32 goal_num
+---
+uint32 finish
+---
+float32 percent_complete
